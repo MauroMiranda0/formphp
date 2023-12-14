@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <form class="form-registro" action="validar-formulario.php" method="POST">
+        <h3>Formulario de registro</h3>
+        <input class="etiqueta" type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <input class="etiqueta" type="email" id="email" name="email" placeholder="Correo electrónico">
+        <input class="etiqueta" type="date" id="fecha" name="fecha" placeholder="Fecha de nacimiento">
+        <input class="etiqueta" type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
+        <input class="etiqueta" type="text" id="ine" name="ine" pattern="[0-9]{8}" placeholder="INE">
+        <p>Formato INE: 12345678</P>
+        <input class="boton" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
